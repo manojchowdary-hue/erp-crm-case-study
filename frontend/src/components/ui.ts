@@ -1,0 +1,97 @@
+import type { CSSProperties } from "react";
+
+export const ui: Record<string, CSSProperties> = {
+  page: { maxWidth: "1100px", margin: "0 auto" },
+  headerRow: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "18px" },
+  h1: { fontSize: "20px", color: "#0f172a", margin: 0 },
+  card: { background: "#fff", borderRadius: "12px", border: "1px solid #e2e8f0", padding: "18px" },
+  input: {
+    padding: "8px 10px",
+    border: "1px solid #cbd5e1",
+    borderRadius: "8px",
+    fontSize: "13px",
+    minWidth: "220px",
+  },
+  select: {
+    padding: "8px 10px",
+    border: "1px solid #cbd5e1",
+    borderRadius: "8px",
+    fontSize: "13px",
+  },
+  button: {
+    padding: "9px 16px",
+    background: "#2563eb",
+    color: "#fff",
+    border: "none",
+    borderRadius: "8px",
+    fontWeight: 600,
+    cursor: "pointer",
+    fontSize: "13px",
+  },
+  buttonSecondary: {
+    padding: "9px 16px",
+    background: "#fff",
+    color: "#334155",
+    border: "1px solid #cbd5e1",
+    borderRadius: "8px",
+    fontWeight: 600,
+    cursor: "pointer",
+    fontSize: "13px",
+  },
+  buttonDanger: {
+    padding: "6px 12px",
+    background: "#fee2e2",
+    color: "#b91c1c",
+    border: "none",
+    borderRadius: "6px",
+    fontWeight: 600,
+    cursor: "pointer",
+    fontSize: "12px",
+  },
+  table: { width: "100%", borderCollapse: "collapse" as const },
+  th: {
+    textAlign: "left" as const,
+    fontSize: "12px",
+    color: "#64748b",
+    padding: "10px 8px",
+    borderBottom: "1px solid #e2e8f0",
+  },
+  td: { padding: "10px 8px", borderBottom: "1px solid #f1f5f9", fontSize: "13px", color: "#0f172a" },
+  errorBox: {
+    background: "#fee2e2",
+    color: "#b91c1c",
+    padding: "10px 12px",
+    borderRadius: "8px",
+    fontSize: "13px",
+    marginBottom: "14px",
+  },
+  modalOverlay: {
+    position: "fixed" as const,
+    inset: 0,
+    background: "rgba(15,23,42,0.5)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    zIndex: 50,
+  },
+  modal: {
+    background: "#fff",
+    borderRadius: "12px",
+    padding: "24px",
+    width: "480px",
+    maxHeight: "85vh",
+    overflowY: "auto" as const,
+  },
+  label: { display: "block", fontSize: "12px", fontWeight: 600, color: "#334155", marginBottom: "5px", marginTop: "12px" },
+};
+
+export function badge(bg: string, fg: string): CSSProperties {
+  return {
+    background: bg,
+    color: fg,
+    padding: "2px 8px",
+    borderRadius: "999px",
+    fontSize: "11px",
+    fontWeight: 700,
+  };
+}

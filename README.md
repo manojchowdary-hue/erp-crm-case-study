@@ -155,3 +155,6 @@ Since the recording is a mandatory submission requirement, a natural flow to rec
 5. Try creating a challan with a quantity greater than available stock, to show the
    "insufficient stock" validation error.
 6. Cancel a confirmed challan and show the stock being restored.
+
+## Testing Notes
+Tested locally with Neon PostgreSQL — verified customer creation, product/stock management, challan confirm (stock deduction), insufficient-stock validation, and challan cancellation (stock restore).
